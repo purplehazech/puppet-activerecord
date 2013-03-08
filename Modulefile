@@ -1,0 +1,10 @@
+name 'purplehazech-activerecord'
+version '0.0.1'
+
+author ''
+license ''
+project_page 'https://github.com/purplehazech/puppet-activerecord'
+source 'https://github.com/purplehazech/puppet-activerecord.git'
+summary 'activerecord module'
+description ''
+dependency 'puppetlabs/stdlib', '~3.2.0'

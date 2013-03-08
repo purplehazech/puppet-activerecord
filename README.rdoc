@@ -1,0 +1,34 @@
+== Module: activerecord
+
+{<img src="https://secure.travis-ci.org/purplehazech/puppet-activerecord.png?branch=master" alt="Build Status" />}[https://travis-ci.org/purplehazech/puppet-activerecord]
+
+Simple module for installing activerecord
+
+=== Example Usage
+
+Run activerecord in standalone mode.
+
+  include activerecord
+
+Run activerecord with parameters.
+
+  class { 'activerecord':
+    enable => present
+  }
+
+=== Releasing
+
+Remember to increment the Version number in the Modulefile as follows.
+
+* increment the major *1*.0.0 if your pull request contains changes 
+  that are not backwards compatible
+* increment the minor 1.*1*.0 if your pull request contains backwards 
+  compatible changes
+* increment the patch 1.0.*1* if your pull request contains bugfixes 
+  that do not change the public api
+* use the 0 major for initial rapid development
+
+Look at http://semver.org for more guidance on when and how to do versioning.
+
+Also see here on how to properly release a module: 
+https://github.com/puppetlabs/puppetlabs-stdlib/blob/master/RELEASE_PROCESS.markdown

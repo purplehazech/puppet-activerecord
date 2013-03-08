@@ -1,0 +1,14 @@
+# Geppetto/Eclipse stuff.
+.project
+# Gem/Rake/Rspec stuff.
+Gemfile.lock
+spec/fixtures/
+# vim stuff
+.*.swp
+metadata.json
+# Emacs stuff.
+*~
+*#*#
+*.#*
+# Build stuff.
+/pkg
