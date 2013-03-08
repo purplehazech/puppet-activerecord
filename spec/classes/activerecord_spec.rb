@@ -24,7 +24,7 @@ describe 'activerecord' do
   
   context "will install the activerecord package" do
     it "call package" do
-      should_contain_package('activerecord')
+      should contain_package('activerecord')
     end
   end
 
