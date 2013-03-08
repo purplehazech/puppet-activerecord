@@ -24,4 +24,7 @@ class activerecord (
   if ($enable == absent) {
     notify{ "activerecord is ${enable}": }
   }
+  package { 'activerecord':
+    require => $enable
+  }
 }
