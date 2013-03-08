@@ -1,8 +1,8 @@
 name 'purplehazech-activerecord'
-version '0.0.1'
+version '0.1.0'
 
 author ''
-license ''
+license 'AGPL'
 project_page 'https://github.com/purplehazech/puppet-activerecord'
 source 'https://github.com/purplehazech/puppet-activerecord.git'
 summary 'activerecord module'
