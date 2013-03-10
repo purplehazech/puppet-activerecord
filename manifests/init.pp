@@ -25,6 +25,6 @@ class activerecord (
     notify{ "activerecord is ${enable}": }
   }
   package { 'activerecord':
-    require => $enable
+    ensure => $enable
   }
 }
