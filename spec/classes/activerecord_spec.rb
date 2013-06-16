@@ -41,4 +41,15 @@ describe 'activerecord' do
     end
   end
 
+  context "install on debian" do
+    let :facts do
+      {
+        :osfamily => 'Debian'
+      }
+    end
+    it "call package" do
+      should contain_package('libactiverecord-ruby')
+    end
+  end
+
 end
