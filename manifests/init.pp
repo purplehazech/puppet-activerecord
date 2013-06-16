@@ -21,10 +21,15 @@ class activerecord (
 ) {
   validate_re($enable, [ '^present', '^absent' ])
 
+  $package_name =  $::osfamily ? {
+    'Debian' => 'libactiverecord-ruby',
+    default  => 'activerecord'
+  }
+
   if ($enable == absent) {
     notify{ "activerecord is ${enable}": }
   }
-  package { 'activerecord':
+  package { $package_name:
     ensure => $enable
   }
 }
